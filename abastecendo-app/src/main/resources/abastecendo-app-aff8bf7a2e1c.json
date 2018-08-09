@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "abastecendo-app",
+  "private_key_id": "aff8bf7a2e1cc0dfb8e055ba4d2bfa2280ec728e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCpP34fjlZ/uOFk\nUB1Zrb2DxbhoKosNCxa4zvtNUM2EOVqwMUrhQDln4GVsV/Q1tSz2sW3W1oaabBNj\nju1vDwVPV34UeqO4h76ehkQULe8agZgs9kbRrDYMRL+Tv4W0biOjf/7A/ruC3220\nlbKO1nClLt2tntDAswW/Q2Ic1O9ViHVskjsDVymixh7AnnoTDfUeyTnVKFONuRLU\nKm9Y1H6J1PHRixH98Equ9P7KbsxkWgxRXCpaySwLWEBe3a88VgCB/0bUC/onqEYh\nTcaYvLGRy6CLZ9R1zcIDDnMYFPpIvxQTweEQJrHBmQHedUWeOr9T5pFCWyAqVGnn\nraVRVh5dAgMBAAECggEAAOUTiyIrBejZ1DhyN0eqYVh5xZ839f0xhQ+fF4UOWR0e\nhCD2luNKimiO0LhUU7ZeAv3kKUcgFg/tOFEIo1YufoFlasFNPUwGb3shQAQQKBE4\nV0CEFla1QHJamvLfx5jvek1ScP3HywTYZSSHeabbmJv7UxAsZWBs7tpx2dosW8Tn\nNhx629EDtr3RH03UjSUiawOwmN/ZmaXakxQbPcEBc3Q5TxfH5FYo94AvViD/UjKB\nUOogUNtowFOnfitDbAN09XOC5HuitHXijJ7hAP62rQ5i4R98z27ctBe+CZDAGJQS\nOPJxjjjO9SJXpLamWFTS3NOGWih4eVdKEryqKmEdVwKBgQDr/jBDqj8lq5fr2MZ2\n0Ma4pIrf14bFcQoxVtgAWp4+G2R3UShL+wTXtia4GQvZ6XYYpppQnxPrCHUh72qX\nJ3DKk62m0nsaVV0DV0krQT7EW/Rkro6ZLC+Q3kzZX6sdC0l74MatILD8n/v1Tcos\nf+/i49BfTXisX1vH1mu05IMMDwKBgQC3mLkrNzOy4EEjq6pQHTM92FzuE3cXiJWY\nxB1fNi35KlbLiY4BZkCO7ZyGvPYCOIZ7TJnIwLamyy0iQo/XOwixwCo2up5nUsgd\nGvixmXSQqK5G8Cf3AXS3pD3+tfwH2Tnlwu2IaFtY0laoC3b34rFpz3osR8NTDgJN\nFYPEEEPy0wKBgHUFvQUwvNN/PXx0KCXu7TvOTBcnlur9XOKOf9ndFa8SgkUwd10G\nAqa86oJL2TabsDYVF1x3JbdcoEjNofuGUUYC6Q9aPDUYs2Devae3WNqiBpSOgqOt\n54Bc25rG9+EVIcFN+vcKyPjclGJVyrU6U8gc080Oa5J+TtLPnuU6k0k9AoGBALbr\n4xG7njbKWBxCHR5U+YjU2UIbArzfyKy8OMd0I7ntBS0lj+a1Cf1doGZePn1X9CVE\n3LO3zkPAiudnigjXOIJhA64joU8wm1DkXoQUcJ7wcTMcc7UWLkQJz/rHNqRbOeRB\noogV8W09pDkpsw6nPjw+C2uy1FkbzA8hMHdX/VshAoGAbqfSiCHsdqvJw120EfYP\noVksuyqp9LdLBQVuK3s5wHE7cnvKl5Zv8TvDwWkLakPK6UZXplpWeX6UScxxsbpO\nLoRv3yRC7ysXW6IeYRxd+0RM9GPikJUcBSDmobTo2UH1khdIhFl3rWGmpBTvksh8\nwyTrusfdU2LPGzsEOW2+vO8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "abastecendo@abastecendo-app.iam.gserviceaccount.com",
+  "client_id": "100042611338292031016",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/abastecendo%40abastecendo-app.iam.gserviceaccount.com"
+}
