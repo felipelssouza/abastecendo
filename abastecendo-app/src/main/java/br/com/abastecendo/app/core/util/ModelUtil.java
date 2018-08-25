@@ -4,12 +4,12 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 
-public final class RequestUtil {
+public final class ModelUtil {
 	
 	private static final ObjectMapper MAPPER = new ObjectMapper()
 			.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 	
-	public RequestUtil() {
+	public ModelUtil() {
 	}
 
 	public static <T> T getBodyAs(Object origem, Class<T> classDestino) {

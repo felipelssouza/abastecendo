@@ -1,6 +1,10 @@
 
 package br.com.abastecendo.app.core.controller.cadastro;
 
+import java.io.UnsupportedEncodingException;
+import java.security.NoSuchAlgorithmException;
+import java.util.concurrent.ExecutionException;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -25,17 +29,18 @@ public class GestaoCadastroUsuarioController {
     }
 
     @RequestMapping(value = "/cadastrar", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
-    public @ResponseBody ResponseApi cadastrar(@RequestBody Object body) {
+	public @ResponseBody ResponseApi cadastrar(@RequestBody Object body)
+			throws NoSuchAlgorithmException, UnsupportedEncodingException, InterruptedException, ExecutionException {
         return gestaoCadastroUsuarioService.incluir(body);
     }
 
     @RequestMapping(value = "/consultar", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public @ResponseBody ResponseApi obter() {
-        return gestaoCadastroUsuarioService.obter();
+    public @ResponseBody ResponseApi obter(@RequestParam String id) throws InterruptedException {
+        return gestaoCadastroUsuarioService.consultar(id);
     }
 
     @RequestMapping(value = "/listar", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public @ResponseBody ResponseApi listar(Object param) {
+    public @ResponseBody ResponseApi listar() throws InterruptedException {
         return gestaoCadastroUsuarioService.listar();
     }
 

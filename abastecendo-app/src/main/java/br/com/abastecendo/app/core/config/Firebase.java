@@ -7,6 +7,7 @@ import java.util.Map;
 import com.google.auth.oauth2.GoogleCredentials;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.FirebaseOptions;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -15,6 +16,7 @@ public class Firebase {
 	private static final String FIREBASE_DATABASE_URL = "https://abastecendo-app.firebaseio.com/";
 
 	public static DatabaseReference database;
+	public static FirebaseAuth firebaseAuth;
 
 	public static void init(InputStream serviceAccount) {
 
@@ -30,9 +32,11 @@ public class Firebase {
 						.setDatabaseUrl(FIREBASE_DATABASE_URL)
 						.setDatabaseAuthVariableOverride(auth)
 						.build();
+				
 				FirebaseApp.initializeApp(options);
-
+				
 				database = FirebaseDatabase.getInstance().getReference("/private_resource");
+				firebaseAuth = FirebaseAuth.getInstance();
 
 			}
 			

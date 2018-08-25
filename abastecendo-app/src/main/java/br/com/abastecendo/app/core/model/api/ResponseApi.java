@@ -12,6 +12,18 @@ public class ResponseApi {
 		this.status = status;
 	}
 
+	public ResponseApi(int status, String mensagem) {
+		this.status = status;
+		this.mensagem = mensagem;
+	}
+
+	public ResponseApi(int status, String mensagem, Object data) {
+		super();
+		this.status = status;
+		this.mensagem = mensagem;
+		this.data = data;
+	}
+
 	public int getStatus() {
 		return status;
 	}

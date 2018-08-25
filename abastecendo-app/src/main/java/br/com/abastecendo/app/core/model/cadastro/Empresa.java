@@ -1,10 +1,8 @@
 package br.com.abastecendo.app.core.model.cadastro;
 
-import java.io.Serializable;
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class Empresa implements Serializable {
+public class Empresa extends Pessoa {
 
 
 	private static final long serialVersionUID = -1975658046543021220L;
@@ -12,17 +10,8 @@ public class Empresa implements Serializable {
 	@JsonProperty("razao_social")
 	private String razaoSocial;
 	
-	@JsonProperty("nome_fantasia")
-	private String nomeFantasia;
-	
-	@JsonProperty("documento")
-    private String documento;
-
-    @JsonProperty("email")
-    private String email;
-
-    @JsonProperty("senha")
-    private String senha;
+	@JsonProperty("fantasia")
+	private String fantasia;
 
 	public String getRazaoSocial() {
 		return razaoSocial;
@@ -32,36 +21,12 @@ public class Empresa implements Serializable {
 		this.razaoSocial = razaoSocial;
 	}
 
-	public String getNomeFantasia() {
-		return nomeFantasia;
+	public String getFantasia() {
+		return fantasia;
 	}
 
-	public void setNomeFantasia(String nomeFantasia) {
-		this.nomeFantasia = nomeFantasia;
-	}
-
-	public String getDocumento() {
-		return documento;
-	}
-
-	public void setDocumento(String documento) {
-		this.documento = documento;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public String getSenha() {
-		return senha;
-	}
-
-	public void setSenha(String senha) {
-		this.senha = senha;
+	public void setFantasia(String fantasia) {
+		this.fantasia = fantasia;
 	}
 
 }

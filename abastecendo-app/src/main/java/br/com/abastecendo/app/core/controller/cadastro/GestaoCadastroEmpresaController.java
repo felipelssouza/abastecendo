@@ -1,12 +1,19 @@
 package br.com.abastecendo.app.core.controller.cadastro;
 
+import java.io.UnsupportedEncodingException;
+import java.security.NoSuchAlgorithmException;
+import java.util.concurrent.ExecutionException;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.abastecendo.app.core.model.api.ResponseApi;
-import br.com.abastecendo.app.core.model.cadastro.Usuario;
 import br.com.abastecendo.app.core.service.cadastro.GestaoCadastroEmpresaService;
 
 @RestController
@@ -20,18 +27,19 @@ public class GestaoCadastroEmpresaController {
         this.gestaoCadastroEmpresaService = gestaoCadastroEmpresaService;
     }
     
-    @RequestMapping("/cadastrar")
-    public @ResponseBody ResponseApi cadastrar(final Usuario usuario) {
-    	return gestaoCadastroEmpresaService.cadastrar(usuario);
+    @RequestMapping(value = "/cadastrar", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
+	public @ResponseBody ResponseApi cadastrar(@RequestBody final Object body)
+			throws NoSuchAlgorithmException, UnsupportedEncodingException, InterruptedException, ExecutionException {
+    	return gestaoCadastroEmpresaService.cadastrar(body);
     }
 	
-    @RequestMapping("/consultar")
-    public @ResponseBody ResponseApi cadastrar(final int codigoUsuario) {
-    	return gestaoCadastroEmpresaService.obter(codigoUsuario);
+    @RequestMapping(value = "/consultar", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public @ResponseBody ResponseApi consultar(@RequestParam final String id) throws InterruptedException {
+    	return gestaoCadastroEmpresaService.consultar(id);
     }
     
-    @RequestMapping("/listar")
-    public @ResponseBody ResponseApi listar() {
+    @RequestMapping(value = "/listar", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public @ResponseBody ResponseApi listar() throws InterruptedException {
     	return gestaoCadastroEmpresaService.listar();
     }
 }
